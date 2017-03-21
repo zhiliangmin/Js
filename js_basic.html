@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js基本操作</title>
+</head>
+<body onload="message()">
+
+<button type="button"onclick="example()">执行外部文件中的函数</button>
+
+<br>
+
+<script type="text/javascript">
+    {
+        document.write("生成普通文本")
+        document.write("<h1>生成标签</h1>")
+
+        function message() {
+            alert("该提示框是通过onload事件调用的")
+        }
+
+        /*
+        声明一个变量，赋值，显示该值，改变该值，然后再显示
+         */
+        var firstname="George"
+        document.write(firstname)
+        document.write("<br/>")
+        firstname="John"
+        document.write(firstname)
+
+    }
+</script>
+
+
+<script src="example.js"></script>
+
+
+
+</body>
+</html>
